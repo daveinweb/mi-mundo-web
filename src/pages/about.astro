@@ -1,0 +1,103 @@
+---
+import MainHead from '../components/MainHead.astro';
+import Footer from '../components/Footer.astro';
+import Nav from '../components/Nav.astro';
+---
+
+<html lang="en">
+	<head>
+		<MainHead title="David" description="About Jeanine White Lorem Ipsum" />
+		<style>
+			.heroImg {
+				max-height: 24rem;
+				object-fit: cover;
+				overflow: hidden;
+			}
+
+			.heroImg img {
+				width: 100%;
+			}
+
+			.bio {
+				font-size: var(--f-u1);
+				line-height: 2;
+				margin-top: 4em;
+			}
+
+			.wrapper.bio {
+				max-width: 50em;
+			}
+
+			.profes{
+				list-style-type: none;
+			}
+
+			a {
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<Nav />
+		<div class="wrapper">
+			<h1>La aventura autodidacta</h1>
+			<div class="heroImg">
+				<img
+					width="1400"
+					height="350"
+					src="https://images.unsplash.com/photo-1581977012607-4091712d36f9?auto=format&fit=crop&w=1400&h=350&q=75"
+				/>
+			</div>
+			<div class="bio wrapper">
+				<p>
+					Mexicano, tengo 30 años, me encanta aprender por mi cuenta, así es como empecé allá por el año de 2016 trabajando en todo y nada
+					cuando conocí el mundo web y la programación, supe en ese momento que esto era algo serio, lo que empezó como un hobbie ahora
+					se ha convertido en algo especial a mi vida, me ha motivado a romper mis limites y a mejorar dia con dia.
+				</p>
+				<p>
+					He trabajado en proyectos para daewoo, xbox, liga junior de nba, actualmente me encuentro en la posición de diseñador web en Ginga Group.
+					En mis proyectos he utilizado el stack web (HTML, CSS, JS), React, PHP y un poco de Gatsby, soy completamente autodidacta, es decir que la mayor parte
+					de las tecnologías las he aprendido ( y sigo...) por mi cuenta.
+				</p>
+				<p>
+					Otro mundo que me fascina es el de los videojuegos, raro ¿no?, un poco de anime que he visto, y obviamente la comida mexicana <s>¡los tacos!</s>.
+					Me encanta jugar videojuegos como The Last Of Us, Warzone, Assasin's Creed y los juegos de arcade de mi infancia, hay muchos en la lista.
+				</p>
+				<p>
+					Me encantaría hacer streams de videojuegos o de programación, pero eso será mas adelante...aun así me encuentro aprendiendo mucho de algunos creadores de contenido,
+					por eso, he dedicado este pequeño espacio para ellos, ya que de manera directa, forman parte de mi vida y de mi formación como desarrollador web.
+					¡Gracias!
+
+					<ul class="profes">
+						<li>
+							<a href="https://www.twitch.tv/bluuweb">
+								1. Bluuweb
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/c/HolaMundoDev">
+								2. Nicolas Schurmman
+							</a>
+						</li>
+						<li>
+							<a href="https://aprendible.com/">
+								3. Aprendible
+							</a>
+						</li>
+						<li>
+							<a href="https://fernando-herrera.com/#/">
+								4. Fernando Herrera
+							</a>
+						</li>
+						<li>
+							<a href="https://codigoconjuan.com/">
+								5. Código con Juan
+							</a>
+						</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+		<Footer />
+	</body>
+</html>
