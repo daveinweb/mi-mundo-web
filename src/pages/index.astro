@@ -16,8 +16,8 @@ const featuredProject = projects[0];
 <html lang="en">
 	<head>
 		<MainHead
-			title="Jeanine White: Personal Site"
-			description="Jeanine White: Developer, Speaker, and Writer..."
+			title="David Bureos"
+			description="David Bureos: Dev, Streamer, Writter"
 		/>
 		<style>
 			.wrapper {
@@ -86,6 +86,7 @@ const featuredProject = projects[0];
 				font-size: var(--f-u6);
 				margin-bottom: 0.5rem;
 				margin-top: 0;
+				color: azure;
 			}
 
 			@media (min-width: 750px) {
@@ -171,6 +172,7 @@ const featuredProject = projects[0];
 				font-size: var(--f-u1);
 				margin-top: 1.5rem;
 				margin-bottom: 0;
+				color: aliceblue;
 			}
 
 			.subtitle {
@@ -206,8 +208,9 @@ const featuredProject = projects[0];
 				width="1600"
 				height="1131"
 				class="img"
-				src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=75"
-				srcset="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=75 800w,https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=75 1200w,https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1600&q=75 1600w,https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=2400&q=75 2400w"
+				src="/assets/dev.jpg"
+				srcset="/assets/dev.jpg 800w, /assets/dev.jpg 1200w, /assets/dev.jpg 1600w, 
+				/assets/dev.jpg 2400w"
 				sizes="(max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (max-width: 2400px) 2400px, 1200px"
 			/>
 			<div class="gradient"></div>
@@ -217,8 +220,8 @@ const featuredProject = projects[0];
 					<small class="subtitle">El mundo web de:</small>David Bureos
 				</h1>
 				<div class="roles">
-					<span class="role">Dev<span class="invert">Dev</span></span>
-					<span class="role">🎤 Speaker <span class="invert">🎤 Speaker</span></span>
+					<span class="role">👨🏽‍💻 Dev<span class="invert">👨🏽‍💻 Dev</span></span>
+					<span class="role">🎤 Streamer <span class="invert">🎤 Streamer</span></span>
 					<span class="role">✏️ Writer <span class="invert">✏️ Writer</span></span>
 				</div>
 				<p class="desc">Developer, gamer, bajista(aunque no me escuchen) y a veces escritor.</p>
@@ -230,17 +233,17 @@ const featuredProject = projects[0];
 					<h3 class="sectionTitle">Proyectos</h3>
 					<PortfolioPreview project={featuredProject} />
 					<div class="buttonContainer">
-						<a href="/products/" class="button">View All</a>
+						<a href="/dev-world/projects/" class="button">Ver</a>
 					</div>
 				</div>
 				<div class="section">
 					<h3 class="sectionTitle">Acerca de mí</h3>
 					<p class="bio">
-						<span>Hola Mundo!</span> Me llamo David (Dave &#128515), bienvenido a mi portafolio.
+						<code style="font-size: 22px;">Hola Mundo!</code> Me llamo David (Dave &#128515), tengo 30 años, bienvenido a mi portafolio.
 						Soy <strong>Web Developer</strong>, y me gusta mucho crear cosas <em>útiles</em> para la web.
 					</p>
 					<p>
-						<a href="/about">Más</a>
+						<a href="/dev-world/about">Más</a>
 					</p>
 				</div>
 			</div>
